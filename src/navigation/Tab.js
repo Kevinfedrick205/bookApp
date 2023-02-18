@@ -45,7 +45,7 @@ const Tab = () => {
                 right:0,
                 backgroundColor: '#fff',
                 borderTopColor:"transparent",
-                height: 80
+                height: 60
             }]
         }}>
             <Tabs.Screen 
@@ -57,10 +57,10 @@ const Tab = () => {
                         <View
                             style={{ alignItems: 'center', justifyContent:'center'}}
                         >
-                            <FontAwesome5 name="home" size={25} color={focused ? COLORS.secondary : COLORS.primary} />
+                            <FontAwesome5 name="home" size={22} color={focused ? COLORS.secondary : COLORS.primary} />
                             <Text style={{
                                 color : focused ? COLORS.secondary : COLORS.primary,
-                                fontSize: 12,
+                                fontSize: 10,
                             }}>Home</Text>
                         </View>
                     ),
@@ -75,10 +75,10 @@ const Tab = () => {
                         <View
                             style={{ alignItems: 'center', justifyContent:'center'}}
                         >
-                            <Ionicons name="search" size={25} color={focused ? COLORS.secondary : COLORS.primary} />
+                            <Ionicons name="search" size={22} color={focused ? COLORS.secondary : COLORS.primary} />
                             <Text style={{
                                 color : focused ? COLORS.secondary : COLORS.primary,
-                                fontSize: 12,
+                                fontSize: 10,
                             }}>Search</Text>
                         </View>
                     ),
@@ -93,10 +93,10 @@ const Tab = () => {
                         <View
                             style={{ alignItems: 'center', justifyContent:'center'}}
                         >
-                            <MaterialIcons name="library-books" size={25} color={focused ? COLORS.secondary : COLORS.primary}  />
+                            <MaterialIcons name="library-books" size={22} color={focused ? COLORS.secondary : COLORS.primary}  />
                             <Text style={{
                                 color : focused ? COLORS.secondary : COLORS.primary,
-                                fontSize: 12,
+                                fontSize: 10,
                             }}>Library</Text>
                         </View>
                     ),
@@ -111,10 +111,10 @@ const Tab = () => {
                         <View
                             style={{ alignItems: 'center', justifyContent:'center'}}
                         >
-                            <MaterialCommunityIcons name="account" size={25} color={focused ? COLORS.secondary : COLORS.primary} />
+                            <MaterialCommunityIcons name="account" size={22} color={focused ? COLORS.secondary : COLORS.primary} />
                             <Text style={{
                                 color : focused ? COLORS.secondary : COLORS.primary,
-                                fontSize: 12,
+                                fontSize: 10,
                             }}>Home</Text>
                         </View>
                     ),
