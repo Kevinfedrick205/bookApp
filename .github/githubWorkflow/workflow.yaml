@@ -1,0 +1,19 @@
+name: new work
+on:
+  push:
+    branches:
+      -main
+jobs:
+  first-job:
+    runs-on: ubuntu-larest
+    steps:
+      -uses: actions/checkout@v2
+      -name: first shell command
+      run: echo "first shell command"
+      shell: bash
+  last-job:
+    runs-on: ubuntu-larest
+    steps:
+      -name: second shell command
+      run: echo "second shell command"
+      shell: bash
