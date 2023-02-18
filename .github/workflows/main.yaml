@@ -4,8 +4,8 @@ on:
     branches:
       - main
       - dev
-  pull-requests:
-    branches:
+  pull_request:
+      branches:
       - main
       - dev
 jobs:
@@ -14,11 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: first shell command
-      run: echo "first shell command"
-      shell: bash
+        run: echo"first shell command"
+        shell: bash
   lastJob:
     runs-on: ubuntu-larest
     steps:
       - name: second shell command
-      run: echo "second shell command"
-      shell: bash
+        run: echo "second shell command"
+        shell: bash
