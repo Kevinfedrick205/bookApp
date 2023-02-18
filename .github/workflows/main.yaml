@@ -2,19 +2,23 @@ name: new work
 on:
   push:
     branches:
-      -main
-      -dev
+      - main
+      - dev
+  pull-requests:
+    branches:
+      - main
+      - dev
 jobs:
-  first-job:
+  firstJob:
     runs-on: ubuntu-larest
     steps:
-      -uses: actions/checkout@v2
-      -name: first shell command
+      - uses: actions/checkout@v2
+      - name: first shell command
       run: echo "first shell command"
       shell: bash
-  last-job:
+  lastJob:
     runs-on: ubuntu-larest
     steps:
-      -name: second shell command
+      - name: second shell command
       run: echo "second shell command"
       shell: bash
